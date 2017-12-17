@@ -14,6 +14,9 @@
 		2895089F1FE46728001E235F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2895089D1FE46728001E235F /* LaunchScreen.storyboard */; };
 		289508AA1FE46728001E235F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508A91FE46728001E235F /* CalculatorTests.swift */; };
 		289508B51FE46728001E235F /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508B41FE46728001E235F /* CalculatorUITests.swift */; };
+		289508C41FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
+		289508C51FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
+		289508C61FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		289508B01FE46728001E235F /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		289508B41FE46728001E235F /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		289508B61FE46728001E235F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289508C31FE69C76001E235F /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		289508931FE46727001E235F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				289508941FE46727001E235F /* AppDelegate.swift */,
+				289508C21FE467C3001E235F /* Supporting Files */,
 				289508961FE46728001E235F /* ViewController.swift */,
 				289508981FE46728001E235F /* Main.storyboard */,
-				2895089B1FE46728001E235F /* Assets.xcassets */,
-				2895089D1FE46728001E235F /* LaunchScreen.storyboard */,
-				289508A01FE46728001E235F /* Info.plist */,
+				289508C31FE69C76001E235F /* CalculatorBrain.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -123,6 +125,17 @@
 				289508B61FE46728001E235F /* Info.plist */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		289508C21FE467C3001E235F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				289508941FE46727001E235F /* AppDelegate.swift */,
+				2895089B1FE46728001E235F /* Assets.xcassets */,
+				2895089D1FE46728001E235F /* LaunchScreen.storyboard */,
+				289508A01FE46728001E235F /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +206,6 @@
 				TargetAttributes = {
 					289508901FE46727001E235F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4F7K27H7K9;
 						ProvisioningStyle = Automatic;
 					};
 					289508A41FE46728001E235F = {
@@ -262,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289508C41FE69C76001E235F /* CalculatorBrain.swift in Sources */,
 				289508971FE46728001E235F /* ViewController.swift in Sources */,
 				289508951FE46728001E235F /* AppDelegate.swift in Sources */,
 			);
@@ -271,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289508C51FE69C76001E235F /* CalculatorBrain.swift in Sources */,
 				289508AA1FE46728001E235F /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289508C61FE69C76001E235F /* CalculatorBrain.swift in Sources */,
 				289508B51FE46728001E235F /* CalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,11 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4F7K27H7K9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MarkusEson.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +447,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4F7K27H7K9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MarkusEson.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
