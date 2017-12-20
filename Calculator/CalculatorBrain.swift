@@ -39,7 +39,10 @@ struct CalculatorBrain{
             "π" : Operation.constant(Double.pi),
             "e" : Operation.constant(M_E),
             "√" : Operation.unaryOperation(sqrt), //sqrt(Double)
+            "sin" : Operation.unaryOperation(sin),
             "cos" : Operation.unaryOperation(cos),
+            "tan" : Operation.unaryOperation(tan),
+            "inv" : Operation.unaryOperation( { $0 / 100 } ),
             "±" : Operation.unaryOperation(changeSign),
             // can be ( { -$0 } )
             "×" : Operation.binaryOperation({(op1: Double, op2: Double) -> Double in return op1 * op2}),
@@ -47,6 +50,7 @@ struct CalculatorBrain{
             "+" : Operation.binaryOperation( { $0 + $1 } ),
             "-" : Operation.binaryOperation( { $0 - $1 } ),
             "÷" : Operation.binaryOperation( { $0 / $1 } ),
+            "x^2" : Operation.unaryOperation( { pow($0, 2) } ),
             "=" : Operation.equals
             
         ]
