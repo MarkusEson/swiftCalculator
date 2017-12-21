@@ -124,7 +124,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="85"/>
                                                         <color key="backgroundColor" red="0.90580284595489502" green="0.9059332013130188" blue="0.90577441453933716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="π"/>
+                                                        <state key="normal" title="✅"/>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K25-uD-s28"/>
                                                         </connections>

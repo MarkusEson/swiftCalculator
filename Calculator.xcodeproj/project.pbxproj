@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		289508951FE46728001E235F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508941FE46727001E235F /* AppDelegate.swift */; };
-		289508971FE46728001E235F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508961FE46728001E235F /* ViewController.swift */; };
 		2895089A1FE46728001E235F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289508981FE46728001E235F /* Main.storyboard */; };
 		2895089C1FE46728001E235F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2895089B1FE46728001E235F /* Assets.xcassets */; };
 		2895089F1FE46728001E235F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2895089D1FE46728001E235F /* LaunchScreen.storyboard */; };
@@ -17,6 +16,7 @@
 		289508C41FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
 		289508C51FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
 		289508C61FE69C76001E235F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289508C31FE69C76001E235F /* CalculatorBrain.swift */; };
+		28CBC0D41FEC696600D3455B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBC0D31FEC696600D3455B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		289508911FE46727001E235F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289508941FE46727001E235F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		289508961FE46728001E235F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		289508991FE46728001E235F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2895089B1FE46728001E235F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2895089E1FE46728001E235F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		289508B41FE46728001E235F /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		289508B61FE46728001E235F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289508C31FE69C76001E235F /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		28CBC0D31FEC696600D3455B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				289508C21FE467C3001E235F /* Supporting Files */,
-				289508961FE46728001E235F /* ViewController.swift */,
 				289508981FE46728001E235F /* Main.storyboard */,
+				28CBC0D31FEC696600D3455B /* ViewController.swift */,
 				289508C31FE69C76001E235F /* CalculatorBrain.swift */,
 			);
 			path = Calculator;
@@ -277,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CBC0D41FEC696600D3455B /* ViewController.swift in Sources */,
 				289508C41FE69C76001E235F /* CalculatorBrain.swift in Sources */,
-				289508971FE46728001E235F /* ViewController.swift in Sources */,
 				289508951FE46728001E235F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

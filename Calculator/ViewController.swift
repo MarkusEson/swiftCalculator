@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     
     var userIsCurrentlyTyping = false
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        brain.addUnaryOperation(named: "✅") { [weak weakSelf = self] in
+            weakSelf?.display.textColor = UIColor.green
+            return sqrt($0)
+        }
+    }
+    
     
     // Lets user touch digit to add it to the display
     @IBAction func touchDigit(_ sender: UIButton) {
